@@ -21,7 +21,11 @@ function Videogames() {
         setNewGame('');
     };
 
+    const removeGame = (id) => {
+        const deletGame = game.filter((game, i) => i !== id);
 
+        setGame(deletGame);
+    }
 
     return (
         <>
@@ -30,7 +34,8 @@ function Videogames() {
                 {game.map((game, index) =>
                     <li className='list-group-item' key={index}>
                         {game.title}
-                        <button className='btn btn-danger position-absolute top-50 end-0 translate-middle-y '>
+                        <button className='btn btn-danger position-absolute top-50 end-0 translate-middle-y '
+                            onClick={() => removeGame(index)}>
                             Rimuovi
                         </button>
                     </li>
