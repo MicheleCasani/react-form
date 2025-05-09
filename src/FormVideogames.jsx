@@ -4,7 +4,7 @@ import Videgogames from './Videogames'
 
 function form() {
     return (
-        <div className='container'>
+        <div className='container mt-5'>
             <h1>Videogames Form</h1>
             <Videgogames />
         </div>
