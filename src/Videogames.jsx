@@ -34,7 +34,7 @@ function Videogames() {
                 {game.map((game, index) =>
                     <li className='list-group-item' key={index}>
                         {game.title}
-                        <button className='btn btn-danger position-absolute top-50 end-0 translate-middle-y '
+                        <button className='btn btn-outline-danger position-absolute top-50 end-0 translate-middle-y '
                             onClick={() => removeGame(index)}>
                             Rimuovi
                         </button>
@@ -52,7 +52,7 @@ function Videogames() {
                         type='text'
                         placeholder='Nuovo Gioco'
                         className='form-control' />
-                    <button className='btn btn-primary'>Aggiungi</button>
+                    <button className='btn btn-outline-success'>Aggiungi</button>
                 </div>
             </form>
         </>
