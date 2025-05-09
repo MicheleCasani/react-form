@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import FormVideogames from './FormVideogames'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div>ciao</div>
+      <FormVideogames />
     </>
   )
 }
